@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@font-face{
+	font-family: myFirstFont;
+	scr: url(glyphicons-halflings-regular.woff);
+}
+
+div {
+	font-family: myFirstFont;
+}
+html, body, header{
+	height: 100%;
+}
+header>section{
+	margin-bottom: 11.5em;
+}
+#header{
+	background-image: url('../imagens/background_header.png');
+	height: 46.5em;
+	padding-top: 6.5em;
+}
+#header, #footer{	
+	background-repeat: repeat-y;	
+	position: relative;
+	margin-bottom: 10em;
+}
+#header>section>figure{
+	margin-top: 0.2em;
+}
+#header footer{
+    height: 153px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+* {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: 'Mukta Malar', sans-serif;
+}
+/*Sobreescrevendo comportamento padrao do h1 normalize*/
+#header section header h1{
+	margin: 0;
+}
+
+#header nav ul{
+	list-style: none;
+}
+#header nav ul>li{
+	float: left;
+	position: relative;
+	display: block;
+	padding: 15px 0;
+}
+#header nav ul>li>a{
+	color: #989bc6;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    font-family: Arial;
+}
+
+#barra-navegacao-topo{
+	margin-top: 1.5em;
+	margin-left: 10em;
+}
+
+#advertising-header{
+	margin-top: 3em;
+}
+#advertising-header header{
+	margin-bottom: 1em;
+}
+#advertising-header section{
+	margin-top: 0.5em;
+}
+#advertising-header h1{
+	color: white;
+	font-size: 3em;
+}
+#advertising-header p, #middle article p{
+	color: #b8b8ba;
+}
+#advertising-header h2, #middle header article h2{
+	text-transform: uppercase;
+	font-family: arial;
+    font-weight: 200;
+    color: #e74b3e;
+}
+#advertising-header section>p, #middle article>p{
+	margin-top: 3em;
+}
+/*Elementos footer do Header geral*/
+#menu-plataforma ul li{
+	width: 275px; height: 153px;
+	background: url('../imagens/sprite-icon-1160x153.png') no-repeat;
+	margin-right: 0.15em;
+}
+#menu-plataforma ul li a{
+	display: block; height: 100%; text-indent: -999999em;
+	
+}
+#menu-plataforma ul li:nth-child(1) {background-position: 0 0;}
+#menu-plataforma ul li:nth-child(2) {background-position: -301px 0;}
+#menu-plataforma ul li:nth-child(3) {background-position: -589px 0;}
+#menu-plataforma ul li:nth-child(4) {background-position: -880px 0;}
+
+/*Corpo do site*/
+#middle{
+	margin-top: 8em;
+}
+#middle span{
+	color: #e74b3e;
+}
+#middle header div h1{
+	text-transform: uppercase;
+	font-family: arial;
+	font-size: 4em;
+}
+#middle article{
+	padding-top: 3em;
+}
+#middle>header {
+	padding-bottom: 20em;
+}
+#middle article>p+p{
+	margin-top: 1em;
+}
+#middle>section{
+	background-color: rgb(233, 233, 233);
+	height: 86vh;
+}
+#middle section>div>header>h2{
+	font-size: 3em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#middle>section>div{
+	padding: 5em 0 5em 0;
+}
+#middle section>div>section div{
+	margin-top: 1.5em;
+}
+#middle section>div>header>h2, #middle>section>div h3, #footer>header>div h3{
+	text-transform: uppercase;
+}
+#middle section>div>header>h2, #middle>section>div h3{	    
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+#middle>section>div h3{
+	text-align: center;
+	margin-top: 4vh;
+}
+
+.circulo-vermelho{
+	height: 200px;
+	width: 200px;
+	border-radius: 200px;
+	background-color: #e74b3e;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer{
+	background-image: url('../imagens/background_footer.png');
+	height: 40.5em;
+	padding-top: 6em;
+}
+#footer>header>div h3::before{
+	content: url('../imagens/envelope.png');
+	margin-right: 0.2em;
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    vertical-align: middle;
+}
+#footer>header>div h3{
+	color: white;
+	vertical-align: middle;
+}
+input[type="text"],input[type="submit"], button{
+	border-style: none;
+	vertical-align: middle;
+}
+button{
+	display: inline-block;
+	background-color: #e74b3e;
+	color: #fff;
+	width: 10em;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+}
+input[type="text"]{
+	padding: 0 15px 0 15px;
+}
