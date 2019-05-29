@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face{
+	font-family: myFirstFont;
+	scr: url(glyphicons-halflings-regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+div {
+	font-family: myFirstFont;
+}
+html, body, header{
+	height: 100%;
+}
+
+#header{
+	background-image: url('../imagens/background_header.png');
+	height: 46.5em;
+	padding-top: 6.5em;
+}
+
+#barra-navegacao-topo{
+    padding: 3em 1em;
+    display: flex;
+}
+#barra-navegacao-topo a{
+	color: #989bc6;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    font-family: Arial;
+}
+
+#barra-navegacao-topo a:hover{
+    color: #e74b3e;
+    text-decoration: underline;
+}
+/*
+#header nav ul{
+    list-style: none;
+    display: flex;
+}*/
+
+#header header{
+    display: flex;
+}
+#toggle{display: none;}
+.togglearea{    
+    color: #989bc6;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label{
+    background-color: white;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span{
+    background-color: #e74b3e;
+    height: 4px;
+    width: 70%;
+    margin: 4px 0px;
+}
+.togglearea{
+    padding-top: 2.5em;
+    display: none;
+}
+@media screen and (max-width: 778px){
+    /*Transformar menu em amburger*/
+    #barra-navegacao-topo{
+        flex-direction: column;
+        display: none;
+        margin-top: 2em;
+    }
+    #toggle:checked + #barra-navegacao-topo {
+        display: flex;
+    }
+    .togglearea{
+        display: flex;
+    }
+}
