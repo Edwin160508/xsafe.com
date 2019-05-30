@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face{
+	font-family: myFirstFont;
+	scr: url(glyphicons-halflings-regular.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+div {
+	font-family: myFirstFont;
+}
+html, body, header{
+	height: 100%;
+}
+
+#header{
+	background-image: url('../imagens/background_header.png');
+	height: 48em;
+	padding-top: 6.5em;
+}
+
+#barra-navegacao-topo{
+    padding: 3em 1em;
+    display: flex;
+}
+#barra-navegacao-topo a{
+	color: #989bc6;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    font-family: Arial;
+}
+
+#barra-navegacao-topo a:hover{
+    color: #e74b3e;
+    text-decoration: underline;
+}
+
+#header header{
+    display: flex;
+}
+#toggle{display: none;}
+.togglearea{    
+    color: #989bc6;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#header section {
+    position: absolute;
+    top: 22.2em;
+    display: flex;
+}
+.togglearea label{
+    background-color: white;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span{
+    background-color: #e74b3e;
+    height: 4px;
+    width: 70%;
+    margin: 4px 0px;
+}
+.togglearea{
+    padding-top: 2.5em;
+    display: none;
+  
+}
+#advertising-header {
+    width: 50%;
+}
+#advertising-header h1, #footer h3{
+    color: white;
+}
+#advertising-header h2{
+    color: #e74b3e;
+}
+#advertising-header p{
+    color: #b8b8ba;
+}
+.phoneImg {
+    width: 100%;
+}
+.container{
+    padding: 15px 15px;
+}
+/*sprite-icon-1160x153.png*/
+.plataformas div{
+	width: 275px; height: 153px;
+	background: url('../imagens/sprite-icon-1160x153.png') no-repeat;
+    margin-right: 0.15em;
+}
+.plataformas {
+    display: flex;
+}
+.windows {background-position: -20px 0 !important;}
+.android { background-position: -321px 0 !important; }
+.apple { background-position: -609px 0 !important; }
+.blackBerry { background-position: -936px 0 !important; }
+#middle {
+    margin-top: 9em;
+}
+#middle header{
+    display: flex;
+}
+#middle h1{
+    font-size: 4em;    
+}
+#middle h1 span, #middle article h2{
+    color: #e74b3e;
+}
+#middle article {
+    padding-top: 4em; 
+}
+#middle article p {
+    margin-top: 1em;
+    color: #b8b8ba;
+}
+#middle article h2{
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+#middle section{
+    margin-top: 2em;
+    background-color: #e9e9e9;
+}
+#middle section h2{
+    font-weight: 100;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+}
+#middle section h3{ 
+    text-align: center;
+    margin-top: 4vh;
+}
+.circulo-vermelho{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    background-color: #e74b3e;
+    margin-left: auto;
+    margin-right: auto;
+}
+#our-job {
+    display: flex;
+}
+#footer {
+    background-image: url('../imagens/background_footer.png');
+    /*height: 40.5em;*/
+    padding-top: 6em;
+}
+#footer>header>div h3::before{
+	content: url('../imagens/envelope.png');
+	margin-right: 0.2em;
+	-webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    vertical-align: middle;
+}
+#footer header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facebook {width: 40px; height: 40px; background-position: 0px 0 !important;}
+.twitter {width: 40px; height: 40px; background-position: -40px 0 !important; }
+.bola {width: 40px; height: 40px; background-position: -80px 0 !important; }
+.pipa {width: 40px; height: 40px; background-position: -120px 0 !important; }
+
+.facebook:hover {width: 40px; height: 40px; background-position: 0px -40px !important;}
+.twitter:hover {width: 40px; height: 40px; background-position: -40px -40px !important; }
+.bola:hover {width: 40px; height: 40px; background-position: -80px -40px !important; }
+.pipa:hover {width: 40px; height: 40px; background-position: -120px -40px !important; }
+    
+.redes-sociais {width: 100%; display: flex;}
+.redes-sociais a{
+    width: 40px; height: 40px;
+    background: url('../imagens/sprite-social.png') no-repeat;
+    margin-right: 0.15em;
+    display: flex;
+} 
+@media screen and (max-width: 778px){
+    #header{
+        height: 50em;
+    }
+    /*Transformar menu em amburger*/
+    #barra-navegacao-topo{
+        flex-direction: column;
+        display: none;
+        margin-top: 2em;
+        margin-left: 10em;
+    }
+    #toggle:checked + #barra-navegacao-topo {
+        display: flex;
+    }
+    .togglearea{
+        display: flex;        
+    }
+    .blackBerry { background-position: -886px 0 !important; }
+    #middle {
+        margin-top: 36em;
+    }
+    #middle article {
+        padding-top: 2.5em; 
+    }
+    #middle h1{
+        font-size: 2em;
+    }
+    #header section {
+        top: 26.2em;
+    }
+    #our-job {
+        display: block;
+    }
+    #our-job div{
+        margin-bottom: 2em;
+    }
+    .plataformas {
+        flex-direction: column;
+        
+    }
+    .windows { background-position: -20px 0 !important; }
+    .android { background-position: -321px 0 !important; }
+    .apple { background-position: -609px 0 !important; }
+    .blackBerry { background-position: -886px 0 !important; }
+    .windows, .android, .apple, .blackBerry{
+        margin-left: auto;
+        margin-right: auto !important;
+        width: 100%;
+    }
+}    
+@media (min-width: 778px) and (max-width: 822px){
+
+    .circulo-vermelho{
+        height: 150px;
+        width: 150px;
+        border-radius: 200px;
+        background-color: #e74b3e;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #our-job div{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .plataformas {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px){
+    #header{
+        height: 59em !important;
+    }
+    #barra-navegacao-topo{
+        margin-left: 0;
+    }
+    .phoneImg{
+        padding-top: 15em;
+    }   
+}
+@media (max-width: 480px){
+    .phoneImg{
+        padding-top: 19em;
+    }
+    #header {
+        height: 59em;
+    }
+    #barra-navegacao-topo{
+        margin-left: 0;
+    }
+    
+   
+}
